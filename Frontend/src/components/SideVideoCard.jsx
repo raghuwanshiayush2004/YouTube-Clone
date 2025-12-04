@@ -6,7 +6,7 @@ const SideVideoCard = ({ video }) => {
       <img src={video.thumbnailUrl} alt={video.title} style={styles.thumbnail} />
       <div style={styles.info}>
         <h4 style={styles.title}>{video.title}</h4>
-        
+        <p style={styles.channel}>{video.channelName}</p>
         <p style={styles.views}>{video.views } : views </p>
 
         
