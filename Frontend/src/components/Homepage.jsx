@@ -20,7 +20,7 @@ function Homepage() {
   };
 
   const handleFilterChange = (filter) => {
-    setSelectedFilter(filter); // Update the selected filter
+     // Update the selected filter
   };
 
   useEffect(() => {
