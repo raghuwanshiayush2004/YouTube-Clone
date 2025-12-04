@@ -22,7 +22,12 @@ const FilterBar = ({ onFilterChange }) => {
   // State to manage the starting index of the filters
   const [startIndex, setStartIndex] = useState(0);
 
- 
+  // Handle previous button click (pagination)
+  const handlePrev = () => {
+    if (startIndex > 0) {
+      setStartIndex(startIndex - itemsPerPage);
+    }
+  };
 
   // Handle next button click (pagination)
   const handleNext = () => {
