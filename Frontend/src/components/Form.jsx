@@ -155,7 +155,13 @@ const Form = () => {
             </button>
           </form>
 
-
+          {/* Toggle between Register and Login forms */}
+          <p className="mt-4 text-center text-sm">
+            {isRegister ? "Already have an account?" : "Don't have an account?"}{" "}
+            <button onClick={toggleForm} className="text-red-500 hover:underline">
+              {isRegister ? "Login here" : "Register here"}
+            </button>
+          </p>
         </div>
       </div>
     </>
