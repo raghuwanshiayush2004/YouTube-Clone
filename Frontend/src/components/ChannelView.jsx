@@ -42,10 +42,7 @@ function ChannelView() {
     }
   }, [id]);
 
-  // Fetch channel data by ID
-  const fetchChannelById = async () => {
-    const url = `http://localhost:5100/api/getchannels/${id}`;
-    const token = localStorage.getItem("token");
+
 
     if (!token) {
       setError("Authentication token is missing.");
