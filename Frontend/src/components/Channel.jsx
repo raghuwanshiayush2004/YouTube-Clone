@@ -68,8 +68,7 @@ function Channel() {
     // Data for the new channel
     const data = {
       channelName,
-      channelDescription,
-    };
+      channelDescription,};
 
     // Check if token exists
     if (!token) return console.error("Token not found in localStorage");
