@@ -13,7 +13,7 @@ const SideVideoGrid = () => {
 
   const fetchVideos = async () => {
       const url = "http://localhost:5100/api/getVideos";
-      const token = localStorage.getItem("token");
+      
 
       if (!token) return console.error("Token not found in localStorage");
 
