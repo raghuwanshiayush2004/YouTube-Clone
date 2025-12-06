@@ -6,8 +6,7 @@ export const commentController = {
   async createComment(req, res) {
    const UserId = req.user.userId;
     try {
-      // Destructure the comment text, userId, and videoId from req.body
-      const { text,  videoId , channelName } = req.body;
+
   
       // Validate required fields
       if (!text  || !videoId || !channelName) {
