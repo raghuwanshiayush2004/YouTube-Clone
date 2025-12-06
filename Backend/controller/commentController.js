@@ -9,7 +9,10 @@ export const commentController = {
       // Destructure the comment text, userId, and videoId from req.body
       const { text,  videoId , channelName } = req.body;
   
-
+      // Validate required fields
+      if (!text  || !videoId || !channelName) {
+        return res.status(400).json({ error: "All fields (text,  videoId) are required." });
+      }
   
       // Create the comment in the database
       const comment = await commentModel.create({
