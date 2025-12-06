@@ -21,9 +21,7 @@ export const commentController = {
         videoId,
         channelName
       });
-  
-      // Return the newly created comment
-      return res.status(201).json(comment);
+ 
   
     } catch (error) {
       return res.status(500).json({ error: error.message });
