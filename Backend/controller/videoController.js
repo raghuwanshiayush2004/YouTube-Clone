@@ -1,9 +1,6 @@
 import videoModel from "../models/VideosModel.js";
 
-// Video Controller
-export const videoController = {
-  async createVideo(req, res) {
-    const { title, description, videoUrl, thumbnailUrl, channelId ,channelName } = req.body; // Get channelId from the request body
+ // Get channelId from the request body
     const userId = req.user.userId;
 
     // Validate the input
