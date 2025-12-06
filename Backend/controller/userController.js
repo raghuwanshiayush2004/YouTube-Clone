@@ -11,11 +11,7 @@ export const userController = {
     const { username, email, password } = req.body;
 
     try {
-      // Check if user already exists
-      const existingUser = await userModel.findOne({ username });
-      if (existingUser) {
-        return res.status(400).json({ error: "Username already exists" });
-      }
+
 
       // Hash password before saving
       const hashedPassword = await bcrypt.hash(password, 10);
