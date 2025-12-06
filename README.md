@@ -1,5 +1,6 @@
 ```markdown
 # YouTube Clone using MERN Stack
+ github Link : https://github.com/raghuwanshiayush2004/YouTube-Clone
 
 ## Objective
 The objective of this project is to build a full-stack YouTube clone where users can view, interact with videos, and perform actions like commenting, liking, and creating a channel. This project demonstrates how to create a real-world application using the MERN stack (MongoDB, Express, React, and Node.js).
@@ -47,13 +48,63 @@ The objective of this project is to build a full-stack YouTube clone where users
 2. **Database**: MongoDB to store users, videos, channels, and comments.
 
 ## Setup
+### Installation Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/raghuwanshiayush2004/YouTube-Clone.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd YouTube-Clone-main
+   ```
+
+3. Install backend dependencies:
+
+   ```bash
+   cd backend
+   npm install
+   ```
+
+4. Install frontend dependencies:
+
+   ```bash
+   npm install
+   ```
+
+5. Set up environment variables:
+   - In the **backend** directory add the following:
+
+     ```
+     JWT_SECRET=your_jwt_secret
+     MONGO_URI=your_mongodb_connection_string
+     ```
+
+6. Start the backend server:
+
+   ```bash
+   cd backend
+   npm start
+   ```
+
+7. Start the frontend server:
+
+   ```bash
+   cd frontend
+   npm run dev
+   ```
+
+8. Visit `http://localhost:5100` to access the application.
 
 ### Prerequisites
-- Node.js 
+
+- Node.js
 - npm
-- MongoDB 
+- MongoDB
 
 ## Usage
+
 - **Home Page**: The homepage displays a grid of videos with thumbnails, titles, and other details.
 - **Search**: Use the search bar to find videos by title.
 - **Sign In**: Click the "Sign In" button in the header, sign in via JWT-based authentication, and view personalized content.
@@ -61,9 +112,8 @@ The objective of this project is to build a full-stack YouTube clone where users
 - **Channel**: After signing in, users can create and manage their channels, upload, edit, or delete videos.
 
 ## Features Demonstrated
+
 1. **React** for building the front-end with state management using `useState`, `useEffect`, and `React Router`.
 2. **Node.js & Express** for back-end API development with JWT-based authentication.
 3. **MongoDB** for storing user, video, channel, and comment data.
 4. **Responsive Design** to ensure the app is fully functional across all devices.
-
-
