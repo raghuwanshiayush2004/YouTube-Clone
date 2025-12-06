@@ -96,7 +96,10 @@ export const channelController = {
         return res.status(404).json({ error: "Channel not found" });
       }
 
-
+      // Check if the logged-in user is the channel's author
+      if (channel.channelAuthor.toString() !== channelAuthor) {
+        return res.status(403).json({ error: "You do not have permission to delete this channel" });
+      }
 
       await channel.deleteOne();
 
