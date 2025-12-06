@@ -14,7 +14,13 @@ export const commentController = {
         return res.status(400).json({ error: "All fields (text,  videoId) are required." });
       }
   
-
+      // Create the comment in the database
+      const comment = await commentModel.create({
+        text,
+        userId:UserId,
+        videoId,
+        channelName
+      });
   
       // Return the newly created comment
       return res.status(201).json(comment);
