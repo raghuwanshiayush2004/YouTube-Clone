@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Test from "./components/Test";
 
 // Lazily load the components
-const Homepage = lazy(() => import("./components/Homepage"));
-const VideoPlayer = lazy(() => import("./components/VideoPlayer"));
+
 const Form = lazy(() => import("./components/Form"));
 const UserProfile = lazy(() => import("./components/UserProfile"));
 const ChannelView = lazy(() => import("./components/Channelview"));
